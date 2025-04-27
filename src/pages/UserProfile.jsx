@@ -96,12 +96,8 @@ const UserProfile = () => {
             <button onClick={gotoaddress}  className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
               Update Address
             </button>
-            <button className="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700">
-              Change Password
-            </button>
-            <button className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
-              Delete Account
-            </button>
+
+            
           </div>
         </div>
       </div>
