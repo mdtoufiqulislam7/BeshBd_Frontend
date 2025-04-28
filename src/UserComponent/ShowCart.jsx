@@ -38,9 +38,9 @@ const ShowCart = () => {
               <img src={item.productId.image} alt={item.productId.name} className="w-20 h-20 object-cover rounded-md" />
               <div className="flex-1 ml-4">
                 <h4 className="font-semibold text-xl">{item.productId.name}</h4>
-                <p className="text-gray-500">Price: ${item.productId.price}</p>
+                <p className="text-gray-500">Price: ৳{item.productId.price}</p>
                 <p className="text-gray-500">Quantity: {item.quantity}</p>
-                <p className="font-semibold text-lg">Total: ${item.productId.price * item.quantity}</p>
+                <p className="font-semibold text-lg">Total: ৳{item.productId.price * item.quantity}</p>
               </div>
               <button
                 onClick={() => handleDelete(item._id)}
@@ -52,7 +52,7 @@ const ShowCart = () => {
           ))}
 
           <div className="mt-6 p-4 bg-gray-100 rounded-md">
-            <h3 className="text-xl font-semibold">Total Amount: ${totalAmount}</h3>
+            <h3 className="text-xl font-semibold">Total Amount: ৳{totalAmount}</h3>
             <button
               onClick={handleCheckout}
               disabled={cartItems.length === 0}
