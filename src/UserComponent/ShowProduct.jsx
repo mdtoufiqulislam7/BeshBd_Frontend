@@ -48,6 +48,7 @@ const ShowProduct = () => {
                 <IoMdPricetags className="text-green-600" />
                 <p className="text-base font-bold text-green-700">
                   ৳ {product.price - (product.price * product.discount) / 100}
+                  <span className="text-sm text-gray-400  ml-2">{product.unit}</span>
                   <span className="text-sm text-gray-400 line-through ml-2">৳ {product.price}</span>
                 </p>
               </div>
