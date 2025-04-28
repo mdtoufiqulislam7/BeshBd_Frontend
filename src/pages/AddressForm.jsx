@@ -25,6 +25,7 @@ const AddressForm = () => {
     const result = await dispatch(updateAddress(formData));
     if (result?.payload) {
       navigate('/userprofile'); // Redirect after success
+      window.location.reload()
     }
   };
 
