@@ -27,7 +27,7 @@ const ShowCart = () => {
       const token = localStorage.getItem("token");
       const user = JSON.parse(localStorage.getItem("user")); // Or get from Redux
   
-      const res = await fetch("http://localhost:5000/api/payment/init", {
+      const res = await fetch("https://deshbd-backend.onrender.com/api/payment/init", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
