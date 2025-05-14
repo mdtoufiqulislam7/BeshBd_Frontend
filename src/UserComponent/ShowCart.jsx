@@ -77,7 +77,7 @@ const ShowCart = () => {
                   <h4 className="font-semibold text-xl">{item.productId.name}</h4>
                   <p className="text-gray-500">Price: Tk{item.productId.price}</p>
                   <p className="text-gray-500">Quantity: {item.quantity}</p>
-                  <p className="font-semibold text-lg">Total: ${item.productId.price * item.quantity}</p>
+                  <p className="font-semibold text-lg">Total: Tk{item.productId.price * item.quantity}</p>
                 </div>
                 <button
                   onClick={() => handleDelete(item._id)}
@@ -90,7 +90,7 @@ const ShowCart = () => {
           })}
 
           <div className="mt-6 p-4 bg-gray-100 rounded-md">
-            <h3 className="text-xl font-semibold">Total Amount: ${totalAmount}</h3>
+            <h3 className="text-xl font-semibold">Total Amount: Tk {totalAmount}</h3>
             <button
               onClick={handlePayment}
               className="w-full mt-4 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700"
