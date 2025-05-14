@@ -75,7 +75,7 @@ const ShowCart = () => {
                 />
                 <div className="flex-1 ml-4">
                   <h4 className="font-semibold text-xl">{item.productId.name}</h4>
-                  <p className="text-gray-500">Price: ${item.productId.price}</p>
+                  <p className="text-gray-500">Price: Tk{item.productId.price}</p>
                   <p className="text-gray-500">Quantity: {item.quantity}</p>
                   <p className="font-semibold text-lg">Total: ${item.productId.price * item.quantity}</p>
                 </div>
